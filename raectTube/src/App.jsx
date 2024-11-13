@@ -19,6 +19,7 @@ let addCounter =()=>{
       <h3>{counter}</h3>
       <button onClick={addCounter}>add</button>
       <button onClick={removeCounter}>remove</button>
+     
     </>
   );
 }
