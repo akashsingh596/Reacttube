@@ -10,7 +10,7 @@ function App() {
       <Login />
       <Profile />
     </UserContextProvider>
-  );
+  )
 }
 
 export default App;
