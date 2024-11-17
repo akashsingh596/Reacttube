@@ -34,6 +34,7 @@ import User from "./components/User/User.jsx";
 //       {
 //         path: "gitHub",
 //         element: <GitHub />,
+//         loader: { githubInfoLoader },
 //       },
 //     ],
 //   },
@@ -43,7 +44,9 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Layout />}>
       <Route path="" element={<Home />} />
-      <Route path="about" element={<About />} />
+      <Route path="about" element={<About />}>
+        {/* <Route path="" /> */}
+      </Route>
       <Route path="contact" element={<Contact />} />
       <Route path="user/:userid" element={<User />} />
       <Route path="github" loader={githubInfoLoader} element={<GitHub />} />
